@@ -1,0 +1,39 @@
+
+<div class="container mt-5">
+    <h1>Table :</h1>
+    <form n></form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Auteur</th>
+                <th>Prix</th>
+                <th>Editer</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="" *ngFor="let Book of Books">
+                <td>
+                    {{Book.id}}
+                </td>
+                <td>
+                    {{Book.title}}
+                </td>
+                <td>
+                    {{Book.auteur}}
+                </td>
+                <td>
+                    {{Book.prix}}
+                </td>
+                <td>
+                    <button class="btn btn-primary" (click)="editBook(Book.id)">Editer</button>
+                </td>
+                <td>
+                    <button class="btn btn-danger" (click)="deleteBook(Book.id)">Supprimer</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
