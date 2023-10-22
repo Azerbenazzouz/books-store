@@ -17,6 +17,7 @@ export class ListBooksComponent {
     new Book(4, "Le philosophe qui n'était pas sage", "Laurent Gounelle", 15),
     new Book(5, "Le meilleur de soi", "Guy Corneau", 15)
   ];
+  
   newBook? : Book[] = this.books;
   
   setBtn(btn : number){
